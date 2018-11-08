@@ -14,16 +14,6 @@ export default new Router({
       name: 'Index',
       component: ()=> Index
     },
-    // {
-    //   path: '/container',
-    //   name: 'container',
-    //   component: ()=> import('@/components/container')
-    // },
-    // {
-    //   path:'/tabs',
-    //   name:'tabs',
-    //   component: () => import('@/components/tabs')
-    // },
     {
       path: '/RealVisit',
         name: 'realvisit',
@@ -38,6 +28,16 @@ export default new Router({
       path: '/PersonStat',
         name: 'personstat',
       component: () => import('@/views/statistic/PersonStat')
+    },
+    {
+      path: '/executecontrol',
+      name: 'executecontrol',
+      component: () => import('@/views/personlibman/executecontrol')
+    },
+    {
+      path: '/tableshow',
+      name: 'tableshow',
+      component: () => import('@/views/personlibman/tableshow')
     }
   ]
 })

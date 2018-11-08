@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <!--div>
-      <img src="./assets/logo.png" width="50px">
-    </div-->
     <el-menu :default-active="$route.path"
              class="head h r" mode="horizontal" background-color="#545c64"
              text-color="#fff"  active-text-color="#ffd04b" router>
@@ -18,7 +15,8 @@
       <el-submenu index="3">
         <template slot="title">人员库管理</template>
         <el-menu-item index="/personlib">人员库</el-menu-item>
-        <el-menu-item index="">布控</el-menu-item>
+        <el-menu-item index="/executeControl">布控管理</el-menu-item>
+        <el-menu-item index="/tableshow">table表格</el-menu-item>
       </el-submenu>
       <el-submenu index="4">
         <template slot="title">统计分析</template>
